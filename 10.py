@@ -7,7 +7,6 @@ app = Dash(__name__)
 app.layout = html.Div(children=[
     dcc.Dropdown(df.columns[1:], value=df.columns[1], id='input', multi=True),
     html.Br(),
-    html.Hr(),
     dcc.Graph(id='output_chart')
 ])
 
